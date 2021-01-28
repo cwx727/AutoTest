@@ -1,0 +1,33 @@
+[
+  {
+    "description": "不带参数的post请求",
+    "request": {
+      "uri": "/postwithoutparam",
+      "method": "post"
+    },
+    "response": {
+      "headers":{
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "不带参数的post请求"
+    }
+  },
+
+  {
+    "description": "带参数的post请求",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "name": "xiaoming",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "带参数的post请求"
+    }
+  }
+]

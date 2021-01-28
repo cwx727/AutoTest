@@ -1,0 +1,34 @@
+[
+  {
+    "description": "这是一个没有参数的请求",
+    "request": {
+      "uri": "/getdemo",
+      "method":"get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是一个没有参数的请求"
+    }
+  },
+
+  {
+    "description": "这是一个带参数的get请求",
+    "request": {
+      "uri":"/getwithparam",
+      "method": "get",
+      "queries": {
+        "name": "xiaoming",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "xiaoming18"
+    }
+  }
+
+]
