@@ -1,5 +1,23 @@
 [
   {
+    "description": "cookie的响应",
+    "request": {
+      "uri": "/getcookies",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "cookies": {
+        "login": "true"
+      },
+
+      "text": "返回带cookies的响应"
+    }
+  },
+
+  {
     "description": "cookies的请求",
     "request": {
       "uri": "/getwithcookies",
@@ -21,8 +39,12 @@
     "request": {
       "uri": "/post/cookies",
       "method": "post",
+
       "cookies": {
         "login": "true"
+      },
+      "headers": {
+        "Content-Type": "application/json"
       },
       "json": {
         "name": "xiaoming",
@@ -36,7 +58,7 @@
       "status": 200,
       "json": {
         "name": "success",
-        "status": 1
+        "status": "1"
       }
     }
   }
