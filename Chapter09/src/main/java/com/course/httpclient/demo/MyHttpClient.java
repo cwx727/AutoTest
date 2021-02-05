@@ -8,7 +8,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
 
 public class MyHttpClient {
@@ -19,6 +18,5 @@ public class MyHttpClient {
         HttpResponse response = client.execute(get);
         String result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
-
     }
 }

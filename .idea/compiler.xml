@@ -2,19 +2,28 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter08" />
         <module name="Chapter05" />
         <module name="Chapter06" />
+        <module name="Chapter10" />
+        <module name="Chapter09" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AutoTest" target="1.5" />
       <module name="Chapter05" target="1.5" />
       <module name="Chapter06" target="1.5" />
-      <module name="Chapter08" target="1.5" />
+      <module name="Chapter09" target="1.5" />
+      <module name="Chapter10" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Chapter10" options="-parameters" />
+    </option>
   </component>
 </project>
