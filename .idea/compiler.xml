@@ -8,21 +8,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter05" />
+        <module name="AutoTest" />
         <module name="Chapter06" />
         <module name="Chapter10" />
-        <module name="Chapter09" />
+        <module name="Chapter08" />
+        <module name="Chapter11" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AutoTest" target="1.5" />
+      <module name="AutoTest" target="1.8" />
       <module name="Chapter05" target="1.5" />
       <module name="Chapter06" target="1.5" />
-      <module name="Chapter09" target="1.5" />
+      <module name="Chapter08" target="1.5" />
       <module name="Chapter10" target="1.8" />
+      <module name="Chapter11" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AutoTest" options="-parameters" />
       <module name="Chapter10" options="-parameters" />
     </option>
   </component>
