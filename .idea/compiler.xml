@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter05" />
-        <module name="AutoTest" />
         <module name="Chapter06" />
-        <module name="Chapter10" />
         <module name="Chapter08" />
+        <module name="AutoTest" />
+        <module name="Chapter10" />
         <module name="Chapter11" />
+        <module name="Chapter12" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="Chapter08" target="1.5" />
       <module name="Chapter10" target="1.8" />
       <module name="Chapter11" target="1.5" />
+      <module name="Chapter12" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
