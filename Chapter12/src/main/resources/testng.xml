@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite name="用户管理系统测试套件">
     <test name="用户管理系统测试用例">
-
+        <classes>
+            <class name = "com.course.cases.LoginTest">  <!--cases/LoginTest中的class名-->
+                <methods>
+                    <include name = "loginTrue"/>  <!--loginTrue为cases/LoginTest中的方法名-->
+                    <include name = "loginFalse"/>
+                </methods>
+            </class>
+            <class name = "com.course.cases.AddUserCaseTest">
+                <methods>
+                    <include name = "addUser"/>
+                </methods>
+            </class>
+            <class name = "com.course.cases.GetUserInfoCaseTest">
+                <methods>
+                    <include name = "getUserInfo"/>
+                </methods>
+            </class>
+            <class name = "com.course.cases.GetUserListCaseTest">
+                <methods>
+                    <include name = "getUserList"/>
+                </methods>
+            </class>
+            <class name = "com.course.cases.UpdateUserInfoCaseTest">
+                <methods>
+                    <include name = "updateUserInfo"/>
+                    <include name = "deleteUser"/>
+                </methods>
+            </class>
+        </classes>
     </test>
+    <listeners>  <!--测试报告产出-->
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener"/>
+    </listeners>
 
 </suite>
