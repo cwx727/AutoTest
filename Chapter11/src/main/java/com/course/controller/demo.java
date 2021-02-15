@@ -19,6 +19,7 @@ public class demo {
     @RequestMapping(value = "/getUserCount", method = RequestMethod.GET)
     @ApiOperation(value = "用户数",httpMethod = "GET")
     public int getUserCount() {
+
         return template.selectOne("getUserCount");
     }
 

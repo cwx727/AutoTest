@@ -1,17 +1,16 @@
-server:
-  port: 8890
+Server:
+  port: 8877
 
 logging:
   path: logs
-  file: mylog.log
-
+  file: userManager.log
 
 spring:
   application:
-    name: report
+    name: UserManager
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/course1?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/course?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: 123456
 
