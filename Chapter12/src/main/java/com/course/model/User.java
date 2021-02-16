@@ -6,7 +6,7 @@ import lombok.Data;
 public class User {
     private int id;
     private String userName;
-    private String psssword;
+    private String password;
     private int age;
     private int sex;
     private int permission;
@@ -17,7 +17,7 @@ public class User {
         return ( "{" +
                 "id" + id + "," +
                 "userName" + userName + "," +
-                "psssword" + psssword + "," +
+                "password" + password + "," +
                 "age" + age + "," +
                 "sex" + sex + "," +
                 "permission" + permission + "," +
